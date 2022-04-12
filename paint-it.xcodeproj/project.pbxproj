@@ -52,13 +52,37 @@
 		9AB2416D2806430D00CCEB9C /* paint-it */ = {
 			isa = PBXGroup;
 			children = (
-				9AB2416E2806430D00CCEB9C /* AppDelegate.swift */,
-				9AB241702806430D00CCEB9C /* ViewController.swift */,
-				9AB241722806430E00CCEB9C /* Assets.xcassets */,
-				9AB241742806430E00CCEB9C /* Main.storyboard */,
-				9AB241772806430E00CCEB9C /* paint_it.entitlements */,
+				9AB2417F2806458800CCEB9C /* Configs */,
+				9AB24180280645BD00CCEB9C /* View */,
+				9AB2417E2806456F00CCEB9C /* Resources */,
 			);
 			path = "paint-it";
+			sourceTree = "<group>";
+		};
+		9AB2417E2806456F00CCEB9C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9AB241722806430E00CCEB9C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9AB2417F2806458800CCEB9C /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				9AB2416E2806430D00CCEB9C /* AppDelegate.swift */,
+				9AB241772806430E00CCEB9C /* paint_it.entitlements */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		9AB24180280645BD00CCEB9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9AB241702806430D00CCEB9C /* ViewController.swift */,
+				9AB241742806430E00CCEB9C /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
