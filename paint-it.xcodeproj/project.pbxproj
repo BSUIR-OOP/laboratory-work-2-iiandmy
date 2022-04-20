@@ -59,15 +59,47 @@
 		9AA9296A281015170033AFBB /* paint-it */ = {
 			isa = PBXGroup;
 			children = (
-				9AA9296B281015170033AFBB /* AppDelegate.swift */,
-				9AA9296D281015170033AFBB /* SceneDelegate.swift */,
-				9AA9296F281015170033AFBB /* ViewController.swift */,
-				9AA92971281015170033AFBB /* Main.storyboard */,
-				9AA929742810151A0033AFBB /* Assets.xcassets */,
+				9AA92983281016B00033AFBB /* Configs */,
+				9AA92985281016CA0033AFBB /* PaintModule */,
+				9AA929822810169A0033AFBB /* Resources */,
 				9AA929762810151A0033AFBB /* LaunchScreen.storyboard */,
-				9AA929792810151A0033AFBB /* Info.plist */,
 			);
 			path = "paint-it";
+			sourceTree = "<group>";
+		};
+		9AA929822810169A0033AFBB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9AA929742810151A0033AFBB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9AA92983281016B00033AFBB /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				9AA9296B281015170033AFBB /* AppDelegate.swift */,
+				9AA9296D281015170033AFBB /* SceneDelegate.swift */,
+				9AA929792810151A0033AFBB /* Info.plist */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		9AA92984281016BF0033AFBB /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				9AA9296F281015170033AFBB /* ViewController.swift */,
+				9AA92971281015170033AFBB /* Main.storyboard */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		9AA92985281016CA0033AFBB /* PaintModule */ = {
+			isa = PBXGroup;
+			children = (
+				9AA92984281016BF0033AFBB /* MainView */,
+			);
+			path = PaintModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
