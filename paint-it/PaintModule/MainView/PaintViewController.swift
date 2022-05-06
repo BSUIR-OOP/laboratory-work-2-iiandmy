@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol PaintViewProtocol {
-    func draw(shape: Shape)
-}
-
 class PaintViewController: UIViewController {
     
     let pickerContent: [String] = ShapeFactory.instance.getNames()
