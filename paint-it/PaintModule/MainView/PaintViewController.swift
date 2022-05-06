@@ -13,15 +13,14 @@ protocol PaintViewProtocol {
 
 class PaintViewController: UIViewController {
     
-    let pickerContent: [String] = [ "Circle", "Rectangle", "Triangle" ]
+    let pickerContent: [String] = ShapeFactory.instance.getNames()
     
     @IBOutlet weak var pickerView: UIPickerView!
-    @IBOutlet weak var paintButton: UIButton!
     @IBOutlet weak var drawPanel: DrawPanel!
     
-    var choosedShape: String? {
+    var choosedShape: String! {
         didSet {
-            print(choosedShape!)
+            drawPanel.shapeToDraw = choosedShape
         }
     }
     
@@ -29,11 +28,14 @@ class PaintViewController: UIViewController {
         super.viewDidLoad()
         
         setupPicker()
+        
+        choosedShape = pickerContent[pickerView.selectedRow(inComponent: 0)]
+        
+        drawPanel.clipsToBounds = true
     }
     
 }
 
-// MARK: UI Components Setup
 extension PaintViewController {
     func setupPicker() {
         pickerView?.dataSource = self
@@ -60,27 +62,3 @@ extension PaintViewController: UIPickerViewDataSource {
         1
     }
 }
-
-//        let myView = MyView()
-//        myView.backgroundColor = view.backgroundColor
-//        myView.frame.size = CGSize(width: 100, height: 200)
-//        myView.frame.origin = CGPoint(x: 1, y: 50)
-//        view.addSubview(myView)
-        
-//        myView.draw(Triangle())
-
-//class MyView: UIView {
-//    private var path: UIBezierPath?
-//
-//    override func draw(_ rect: CGRect) {
-//
-//        path?.lineWidth = 3
-//        UIColor.red.setStroke()
-//        path?.stroke()
-//    }
-//
-//    func draw(_ shape: Shape) {
-//        path = shape.path(frame.size)
-//        setNeedsDisplay()
-//    }
-//}
