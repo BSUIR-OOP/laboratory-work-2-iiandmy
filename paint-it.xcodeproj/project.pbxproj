@@ -11,8 +11,9 @@
 		9A51CF4F281A0409002EDF30 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51CF4E281A0409002EDF30 /* Shape.swift */; };
 		9A51CF51281A04E9002EDF30 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51CF50281A04E9002EDF30 /* Triangle.swift */; };
 		9A51CF53281A0AFA002EDF30 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51CF52281A0AFA002EDF30 /* Rectangle.swift */; };
-		9A51CF55281A0CAD002EDF30 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51CF54281A0CAD002EDF30 /* Circle.swift */; };
+		9A51CF55281A0CAD002EDF30 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51CF54281A0CAD002EDF30 /* Ellipse.swift */; };
 		9A51CF57281A1260002EDF30 /* ShapeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51CF56281A1260002EDF30 /* ShapeFactory.swift */; };
+		9A8E1BEB2824AD4100D0E50F /* UIColor+Transparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E1BEA2824AD4100D0E50F /* UIColor+Transparent.swift */; };
 		9AA9296C281015170033AFBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9296B281015170033AFBB /* AppDelegate.swift */; };
 		9AA9296E281015170033AFBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9296D281015170033AFBB /* SceneDelegate.swift */; };
 		9AA92970281015170033AFBB /* PaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9296F281015170033AFBB /* PaintViewController.swift */; };
@@ -27,8 +28,9 @@
 		9A51CF4E281A0409002EDF30 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		9A51CF50281A04E9002EDF30 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		9A51CF52281A0AFA002EDF30 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
-		9A51CF54281A0CAD002EDF30 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		9A51CF54281A0CAD002EDF30 /* Ellipse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ellipse.swift; sourceTree = "<group>"; };
 		9A51CF56281A1260002EDF30 /* ShapeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeFactory.swift; sourceTree = "<group>"; };
+		9A8E1BEA2824AD4100D0E50F /* UIColor+Transparent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Transparent.swift"; sourceTree = "<group>"; };
 		9AA92968281015170033AFBB /* paint-it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "paint-it.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA9296B281015170033AFBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AA9296D281015170033AFBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +59,7 @@
 				9A51CF4E281A0409002EDF30 /* Shape.swift */,
 				9A51CF50281A04E9002EDF30 /* Triangle.swift */,
 				9A51CF52281A0AFA002EDF30 /* Rectangle.swift */,
-				9A51CF54281A0CAD002EDF30 /* Circle.swift */,
+				9A51CF54281A0CAD002EDF30 /* Ellipse.swift */,
 				9A51CF56281A1260002EDF30 /* ShapeFactory.swift */,
 			);
 			path = Model;
@@ -71,11 +73,12 @@
 			path = Panels;
 			sourceTree = "<group>";
 		};
-		9A51CF4B2819FE9A002EDF30 /* Utils */ = {
+		9A8E1BE92824AD3000D0E50F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9A8E1BEA2824AD4100D0E50F /* UIColor+Transparent.swift */,
 			);
-			path = Utils;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9AA9295F281015170033AFBB = {
@@ -136,7 +139,7 @@
 		9AA92985281016CA0033AFBB /* PaintModule */ = {
 			isa = PBXGroup;
 			children = (
-				9A51CF4B2819FE9A002EDF30 /* Utils */,
+				9A8E1BE92824AD3000D0E50F /* Extensions */,
 				9A51CF482819FCF4002EDF30 /* Panels */,
 				9A51CF472819F005002EDF30 /* Model */,
 				9AA92984281016BF0033AFBB /* MainView */,
@@ -218,13 +221,14 @@
 			files = (
 				9A51CF4A2819FD1A002EDF30 /* DrawPanel.swift in Sources */,
 				9A51CF4F281A0409002EDF30 /* Shape.swift in Sources */,
-				9A51CF55281A0CAD002EDF30 /* Circle.swift in Sources */,
+				9A51CF55281A0CAD002EDF30 /* Ellipse.swift in Sources */,
 				9AA92970281015170033AFBB /* PaintViewController.swift in Sources */,
 				9A51CF57281A1260002EDF30 /* ShapeFactory.swift in Sources */,
 				9AA9296C281015170033AFBB /* AppDelegate.swift in Sources */,
 				9AA9296E281015170033AFBB /* SceneDelegate.swift in Sources */,
 				9A51CF51281A04E9002EDF30 /* Triangle.swift in Sources */,
 				9A51CF53281A0AFA002EDF30 /* Rectangle.swift in Sources */,
+				9A8E1BEB2824AD4100D0E50F /* UIColor+Transparent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
