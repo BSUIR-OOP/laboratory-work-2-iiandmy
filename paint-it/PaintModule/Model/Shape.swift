@@ -8,6 +8,8 @@
 import UIKit
 
 class Shape {
+    let viewOffset: CGFloat = 1
+    
     var bezierPath: UIBezierPath!
     var startPoint: CGPoint!
     var size: CGSize!
