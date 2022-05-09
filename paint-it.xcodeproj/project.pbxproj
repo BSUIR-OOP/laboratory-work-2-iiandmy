@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A448DC1282941CB00A13669 /* Trapezium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A448DC0282941CB00A13669 /* Trapezium.swift */; };
+		9A448DC32829436900A13669 /* Pentagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A448DC22829436900A13669 /* Pentagon.swift */; };
+		9A448DC5282945CA00A13669 /* RightArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A448DC4282945CA00A13669 /* RightArrow.swift */; };
+		9A448DC72829478200A13669 /* LeftArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A448DC62829478200A13669 /* LeftArrow.swift */; };
 		9A51CF4A2819FD1A002EDF30 /* DrawPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51CF492819FD1A002EDF30 /* DrawPanel.swift */; };
 		9A51CF4F281A0409002EDF30 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51CF4E281A0409002EDF30 /* Shape.swift */; };
 		9A51CF51281A04E9002EDF30 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51CF50281A04E9002EDF30 /* Triangle.swift */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A448DC0282941CB00A13669 /* Trapezium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trapezium.swift; sourceTree = "<group>"; };
+		9A448DC22829436900A13669 /* Pentagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pentagon.swift; sourceTree = "<group>"; };
+		9A448DC4282945CA00A13669 /* RightArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightArrow.swift; sourceTree = "<group>"; };
+		9A448DC62829478200A13669 /* LeftArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftArrow.swift; sourceTree = "<group>"; };
 		9A51CF492819FD1A002EDF30 /* DrawPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPanel.swift; sourceTree = "<group>"; };
 		9A51CF4E281A0409002EDF30 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		9A51CF50281A04E9002EDF30 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
@@ -61,6 +69,10 @@
 				9A51CF52281A0AFA002EDF30 /* Rectangle.swift */,
 				9A51CF54281A0CAD002EDF30 /* Ellipse.swift */,
 				9A51CF56281A1260002EDF30 /* ShapeFactory.swift */,
+				9A448DC0282941CB00A13669 /* Trapezium.swift */,
+				9A448DC22829436900A13669 /* Pentagon.swift */,
+				9A448DC4282945CA00A13669 /* RightArrow.swift */,
+				9A448DC62829478200A13669 /* LeftArrow.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,7 +232,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A51CF4A2819FD1A002EDF30 /* DrawPanel.swift in Sources */,
+				9A448DC32829436900A13669 /* Pentagon.swift in Sources */,
+				9A448DC72829478200A13669 /* LeftArrow.swift in Sources */,
 				9A51CF4F281A0409002EDF30 /* Shape.swift in Sources */,
+				9A448DC1282941CB00A13669 /* Trapezium.swift in Sources */,
+				9A448DC5282945CA00A13669 /* RightArrow.swift in Sources */,
 				9A51CF55281A0CAD002EDF30 /* Ellipse.swift in Sources */,
 				9AA92970281015170033AFBB /* PaintViewController.swift in Sources */,
 				9A51CF57281A1260002EDF30 /* ShapeFactory.swift in Sources */,

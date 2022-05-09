@@ -22,6 +22,10 @@ class ShapeFactory {
         shapes["Triangle"] = { start, size in return Triangle(startPoint: start, size: size) }
         shapes["Rectangle"] = { start, size in return Rectangle(startPoint: start, size: size) }
         shapes["Ellipse"] = { start, size in return Ellipse(startPoint: start, size: size) }
+        shapes["Trapezium"] = { start, size in return Trapezium(startPoint: start, size: size) }
+        shapes["Pentagon"] = { start, size in return Pentagon(startPoint: start, size: size) }
+        shapes["ArrowRight"] = { start, size in return RightArrow(startPoint: start, size: size) }
+        shapes["ArrowLeft"] = { start, size in return LeftArrow(startPoint: start, size: size) }
     }
     
     func getNames() -> [String] {
